@@ -60,6 +60,7 @@ const Formulario2 = () => {
   }}/>
 </form>
 </center>
+<div className="conenedorform"></div>
     </>
   )
 }

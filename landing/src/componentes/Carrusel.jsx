@@ -1,4 +1,6 @@
-
+import fondo12 from "../Assets/fondo1.jpeg";
+import fondo13 from "../Assets/fondo2.jpeg";
+import fondo14 from "../Assets/qwe3.jpeg";
 
  export const Carrusel = () => {
   return (
@@ -6,13 +8,13 @@
     <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://sonorastar.com/wp-content/uploads/2020/04/cinnamon-3.jpg" class="d-block w-100" alt="..."/>
+      <img src={fondo12} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src="https://sonorastar.com/wp-content/uploads/2020/04/cinnamon-4.jpg" class="d-block w-100" alt="..."/>
+      <img src={fondo13} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src="https://sonorastar.com/wp-content/uploads/2020/04/cinnamon-4.jpg" class="d-block w-100" alt="..."/>
+      <img src={fondo14} class="d-block w-100" alt="..."/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

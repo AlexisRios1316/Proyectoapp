@@ -1,8 +1,13 @@
-
+import Card123 from "../ComponentesAbout/Card123"
+import Footer1 from "../componentes/Footer1"
 
  export const About = () => {
   return (
-    <div>About</div>
+  <>
+  <Card123/>
+
+  <Footer1/>
+  </>
   )
 }
 
