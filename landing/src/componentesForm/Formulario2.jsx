@@ -1,6 +1,8 @@
 import diseño2 from "../Styles/formdiseño.css";
 import { useEffect, useState } from "react";
 import { addReservation } from "../utils/dynamodb";
+import {getreservatios} from "../utils/dynamodb";
+
 
 const Formulario2 = () => {
     const [form, setform] = useState({
@@ -42,7 +44,9 @@ const Formulario2 = () => {
 
   <input type="submit" className="formulario__submit" onClick={(evt) => {
    evt.preventDefault()
-    addReservation({
+  
+    addReservation
+    ({
         id_reservacion:2,
         Email: form.email,
         Nombre:form.name,

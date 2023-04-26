@@ -2,8 +2,8 @@ import * as AWS from 'aws-sdk';
 
 const config = {
     region:'us-east-1',
-    secretAccessskey:'HDyd5bs27mBvhh6BX0z7lkbKYyB7AMf5I3QcQYli',
-    accessKeyid:'AKIAZVL5SIR4ERFX52WK'
+    secretAccessskey: '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',
+    accessKeyid: 'AKIAZVL5SIR4HESGWW4N'
 }
 
 
@@ -24,4 +24,13 @@ export const addReservation = async (data) => {
     const response = await db.put(params).promise()
     console.log(response.$response.httpResponse);
 
+}
+
+export const getreservatios = async() => {
+    const params = {
+        TableName:table
+
+    }
+    const response = await db.scan(params).promise()
+    console.log(response.Items)
 }
