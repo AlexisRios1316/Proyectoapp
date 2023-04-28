@@ -1,10 +1,15 @@
 import * as AWS from 'aws-sdk';
 
+
 const config = {
-    region:'us-east-1',
-    secretAccessskey: 'Un6fBEf/Qq9Z47b9SuoK3g0kWvk6ym5betvhRP2p',
-    accessKeyid: 'AKIAZVL5SIR4HESGWW4N'
-}
+
+   region: 'us-east-1',
+    
+    secretAccessKey: 'Un6fBEf/Qq9Z47b9SuoK3g0kWvk6ym5betvhRP2p',
+    
+    accessKeyId: 'AKIAZVL5SIR4HESGWW4N'
+    
+    }
 
 
 AWS.config.update(config);
